@@ -5,12 +5,6 @@
 
 void DrawSolidRainbow()
 {
-    const int deltaHue  = 4;
-    static byte hue = HUE_RED;
-    hue += deltaHue;
-    //static CRGB current_color;
-
-    //fill_solid(g_LEDs, NUM_LEDS, current_color.setHue(hue));
+    byte hue = beat8(8);
     fill_solid(g_LEDs, NUM_LEDS, CHSV(hue,255,255));
-    delay(100);
 }
