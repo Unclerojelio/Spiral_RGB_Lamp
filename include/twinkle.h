@@ -31,7 +31,9 @@ static const CRGB TwinkleColors [] =
 void DrawTwinkle()
 {
     const int fadeAmt = 32;
-    FastLED.leds()[random(NUM_LEDS)] = TwinkleColors[random(0, ARRAYSIZE(TwinkleColors))];
-    fadeToBlackBy(FastLED.leds(), NUM_LEDS, fadeAmt);
-    delay(200);       
+    EVERY_N_MILLISECONDS(250)
+    {
+        FastLED.leds()[random(NUM_LEDS)] = TwinkleColors[random(0, ARRAYSIZE(TwinkleColors))];
+        fadeToBlackBy(FastLED.leds(), NUM_LEDS, fadeAmt);
+    }      
 }
