@@ -27,6 +27,7 @@ int g_PowerLimit = 3000;         // 900mW Power Limit
 CRGB g_LEDs[NUM_LEDS] = {0};    // Frame buffer for FastLED
 
 #include "comet.h"
+#include "solid_rainbow.h"
 
 void setup() 
 {
@@ -45,7 +46,8 @@ void setup()
 
 void loop() 
 {
-  DrawComet();
+  //DrawComet();
+  DrawSolidRainbow();
   FastLED.show(g_Brightness);                          //  Show and delay
   delay(33);
 }
