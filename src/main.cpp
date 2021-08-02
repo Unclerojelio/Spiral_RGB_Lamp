@@ -51,5 +51,5 @@ void loop()
   //DrawSolidRainbow();
   DrawTwinkle();
   FastLED.show(g_Brightness);                          //  Show and delay
-  delay(33);
+  FastLED.delay(33);
 }
