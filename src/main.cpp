@@ -50,6 +50,7 @@ void loop()
   //DrawComet();
   //DrawSolidRainbow();
   DrawTwinkle();
+  //DrawTwinkleTails();
   FastLED.show(g_Brightness);                          //  Show and delay
   FastLED.delay(33);
 }
