@@ -39,9 +39,9 @@ void DrawTwinkle()
 }
 
 /******************************************************************************
- * Function: DrawTwinkleTails
- * Date 09 Aug 2021
- * Created by: Roger Banks
+ * Function:    DrawTwinkleTails
+ * Date:        09 Aug 2021
+ * Created by:  Roger Banks
  * Description: Creates a random string of pixels with a random color from a
  *              table and moves that string of pixels along the strip until
  *              it fades out.
